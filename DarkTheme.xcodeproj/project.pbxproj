@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		6803E86E29DB3C380070430A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803E86D29DB3C380070430A /* AppDelegate.swift */; };
 		6803E87029DB3C380070430A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803E86F29DB3C380070430A /* SceneDelegate.swift */; };
-		6803E87229DB3C380070430A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803E87129DB3C380070430A /* ViewController.swift */; };
+		6803E87229DB3C380070430A /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6803E87129DB3C380070430A /* ThemeViewController.swift */; };
 		6803E87529DB3C380070430A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6803E87329DB3C380070430A /* Main.storyboard */; };
 		6803E87729DB3C390070430A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6803E87629DB3C390070430A /* Assets.xcassets */; };
 		6803E87A29DB3C390070430A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6803E87829DB3C390070430A /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		6803E86A29DB3C380070430A /* DarkTheme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DarkTheme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6803E86D29DB3C380070430A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6803E86F29DB3C380070430A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6803E87129DB3C380070430A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6803E87129DB3C380070430A /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		6803E87429DB3C380070430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6803E87629DB3C390070430A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6803E87929DB3C390070430A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +56,39 @@
 		6803E86C29DB3C380070430A /* DarkTheme */ = {
 			isa = PBXGroup;
 			children = (
-				6803E86D29DB3C380070430A /* AppDelegate.swift */,
-				6803E86F29DB3C380070430A /* SceneDelegate.swift */,
-				6803E87129DB3C380070430A /* ViewController.swift */,
-				6803E87329DB3C380070430A /* Main.storyboard */,
+				6803E88129DB3EFC0070430A /* AppDelegate */,
+				6803E88229DB410C0070430A /* Controller */,
+				6803E88329DB41220070430A /* View */,
 				6803E87629DB3C390070430A /* Assets.xcassets */,
-				6803E87829DB3C390070430A /* LaunchScreen.storyboard */,
 				6803E87B29DB3C390070430A /* Info.plist */,
 			);
 			path = DarkTheme;
+			sourceTree = "<group>";
+		};
+		6803E88129DB3EFC0070430A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				6803E86D29DB3C380070430A /* AppDelegate.swift */,
+				6803E86F29DB3C380070430A /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		6803E88229DB410C0070430A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6803E87129DB3C380070430A /* ThemeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6803E88329DB41220070430A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6803E87329DB3C380070430A /* Main.storyboard */,
+				6803E87829DB3C390070430A /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6803E87229DB3C380070430A /* ViewController.swift in Sources */,
+				6803E87229DB3C380070430A /* ThemeViewController.swift in Sources */,
 				6803E86E29DB3C380070430A /* AppDelegate.swift in Sources */,
 				6803E87029DB3C380070430A /* SceneDelegate.swift in Sources */,
 			);
