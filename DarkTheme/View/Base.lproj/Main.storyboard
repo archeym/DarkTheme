@@ -28,7 +28,7 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Dark Theme On"/>
                                 <connections>
                                     <action selector="darkThemeButtonTapped:" destination="s3T-Uf-Dsz" eventType="touchUpInside" id="5fl-jl-wEg"/>
-                                    <action selector="darkThemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FD0-HK-1Ku"/>
+                                    <action selector="darkThemeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kBu-wv-Mie"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -39,7 +39,18 @@
                             <constraint firstItem="Jhe-Q6-NoI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ktd-E9-CIL"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Iou-oK-bPa"/>
+                    <navigationItem key="navigationItem" id="Iou-oK-bPa">
+                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="ddx-lc-ehH">
+                            <connections>
+                                <action selector="plusButtonTapped:" destination="BYZ-38-t0r" id="xNC-RO-elE"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="info.circle" catalog="system" id="xvM-Fa-frV">
+                            <connections>
+                                <action selector="infoButtonTapped:" destination="BYZ-38-t0r" id="iCW-qA-hM6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="darkThemeButton" destination="Jhe-Q6-NoI" id="sUN-iT-ISQ"/>
                     </connections>
@@ -69,6 +80,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="info.circle" catalog="system" width="128" height="123"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
